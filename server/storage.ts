@@ -36,7 +36,11 @@ interface DBState {
   activities: IActivity[];
 }
 
-const DATA_DIR = path.resolve(process.cwd(), 'data');
+// Vercel's deployed function bundle is read-only. Use its writable temporary
+// directory for the local cache; MongoDB remains the persistent store there.
+const DATA_DIR = process.env.VERCEL
+  ? path.join('/tmp', 'pte-tracker')
+  : path.resolve(process.cwd(), 'data');
 const DATA_FILE = path.join(DATA_DIR, 'db.json');
 
 function ensureDataFile(): DBState {
