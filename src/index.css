@@ -1,13 +1,50 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", Arial, sans-serif;
+  --font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-neutral-50: #f4f7f6;
+  --color-neutral-100: #edf2f1;
+  --color-neutral-200: #e2e8e7;
+  --color-neutral-300: #d4dddb;
+  --color-neutral-400: #9aa8ae;
+  --color-neutral-500: #71808d;
+  --color-neutral-600: #536777;
+  --color-neutral-700: #354c5f;
+  --color-neutral-800: #21384c;
+  --color-neutral-900: #172b3f;
+  --color-neutral-950: #102538;
+
+  --color-indigo-50: #e8f4f2;
+  --color-indigo-100: #d7ece9;
+  --color-indigo-200: #b8ded9;
+  --color-indigo-300: #91c9c4;
+  --color-indigo-400: #62aaa7;
+  --color-indigo-500: #3b918f;
+  --color-indigo-600: #2d7f80;
+  --color-indigo-700: #246c6e;
+  --color-indigo-800: #20585d;
+  --color-indigo-900: #1b474d;
+  --color-indigo-950: #123a40;
 }
 
 html,
 body,
 #root {
-  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  font-family: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  color-scheme: light;
+  background: #f4f7f6;
+}
+
+body {
+  color: #172b3f;
+  background: #f4f7f6;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 button,
@@ -15,4 +52,18 @@ input,
 select,
 textarea {
   font: inherit;
+}
+
+@layer utilities {
+  .rounded-lg {
+    border-radius: 1rem;
+  }
+
+  .rounded-xl {
+    border-radius: 1.25rem;
+  }
+
+  .rounded-md {
+    border-radius: 0.75rem;
+  }
 }
