@@ -1,0 +1,6 @@
+{
+  "name": "PTE Tracker",
+  "description": "Daily PTE Academic preparation tracker with roadmap, study logs, mock exam scores, and analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,660 @@
+{
+  "settings": {
+    "examDate": "2027-03-30",
+    "bufferEndDate": "2027-04-12",
+    "minScore": 58,
+    "targetScore": 70,
+    "minSkillScore": 50,
+    "dailyGoalMinutes": 105
+  },
+  "roadmapWeeks": [
+    {
+      "_id": "week_1_0",
+      "weekNo": 1,
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-16",
+      "phase": "Foundation",
+      "title": "Diagnostic Mock & Core English Foundations",
+      "topics": [
+        {
+          "_id": "topic_1_0",
+          "text": "Diagnostic mock",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_1_1",
+          "text": "Parts of speech (8 types)",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_1_2",
+          "text": "Articles",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_1_3",
+          "text": "Singular/plural rules",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_2_1",
+      "weekNo": 2,
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-23",
+      "phase": "Foundation",
+      "title": "Verb Forms & Irregular Verbs",
+      "topics": [
+        {
+          "_id": "topic_2_0",
+          "text": "Verb forms V1–V5",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_2_1",
+          "text": "10 irregular verbs daily (100 total)",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_2_2",
+          "text": "Helping verbs (be/have/do)",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_3_2",
+      "weekNo": 3,
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-30",
+      "phase": "Foundation",
+      "title": "Sentence Structure & Agreement",
+      "topics": [
+        {
+          "_id": "topic_3_0",
+          "text": "SVO pattern",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_3_1",
+          "text": "Question formation",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_3_2",
+          "text": "Negatives",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_3_3",
+          "text": "Subject-verb agreement",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_4_3",
+      "weekNo": 4,
+      "startDate": "2026-12-01",
+      "endDate": "2026-12-07",
+      "phase": "Foundation",
+      "title": "Simple Tenses & Checkpoint 1",
+      "topics": [
+        {
+          "_id": "topic_4_0",
+          "text": "Simple present",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_4_1",
+          "text": "Simple past",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_4_2",
+          "text": "Simple future",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_4_3",
+          "text": "Checkpoint 1 (Dec 7)",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_5_4",
+      "weekNo": 5,
+      "startDate": "2026-12-08",
+      "endDate": "2026-12-14",
+      "phase": "Grammar Core",
+      "title": "Present Tense Mastery",
+      "topics": [
+        {
+          "_id": "topic_5_0",
+          "text": "Present simple/continuous/perfect/perfect continuous",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_6_5",
+      "weekNo": 6,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-21",
+      "phase": "Grammar Core",
+      "title": "Past Tense Mastery",
+      "topics": [
+        {
+          "_id": "topic_6_0",
+          "text": "Past simple/continuous/perfect/perfect continuous",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_7_6",
+      "weekNo": 7,
+      "startDate": "2026-12-22",
+      "endDate": "2026-12-28",
+      "phase": "Grammar Core",
+      "title": "Future Tense Mastery",
+      "topics": [
+        {
+          "_id": "topic_7_0",
+          "text": "Future simple/continuous/perfect/perfect continuous",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_8_7",
+      "weekNo": 8,
+      "startDate": "2026-12-29",
+      "endDate": "2027-01-04",
+      "phase": "Grammar Core",
+      "title": "Modals, Active & Passive Voice",
+      "topics": [
+        {
+          "_id": "topic_8_0",
+          "text": "Modal verbs",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_8_1",
+          "text": "Active voice",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_8_2",
+          "text": "Passive voice",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_8_3",
+          "text": "Convert 12 tenses active→passive",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_9_8",
+      "weekNo": 9,
+      "startDate": "2027-01-05",
+      "endDate": "2027-01-11",
+      "phase": "Grammar Core",
+      "title": "Conditionals, Speech & Prepositions",
+      "topics": [
+        {
+          "_id": "topic_9_0",
+          "text": "Conditionals type 1/2/3",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_9_1",
+          "text": "Direct and indirect speech",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_9_2",
+          "text": "Prepositions",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_9_3",
+          "text": "Phrasal verbs",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_9_4",
+          "text": "Book exam slot by Jan 15",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_10_9",
+      "weekNo": 10,
+      "startDate": "2027-01-12",
+      "endDate": "2027-01-18",
+      "phase": "Grammar Core",
+      "title": "Grammar Revision & Mock 1",
+      "topics": [
+        {
+          "_id": "topic_10_0",
+          "text": "Full grammar revision",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_10_1",
+          "text": "Mock 1 (Jan 17)",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_11_10",
+      "weekNo": 11,
+      "startDate": "2027-01-19",
+      "endDate": "2027-01-25",
+      "phase": "PTE Skills",
+      "title": "PTE Speaking: RA, RS & ASQ",
+      "topics": [
+        {
+          "_id": "topic_11_0",
+          "text": "Read Aloud",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_11_1",
+          "text": "Repeat Sentence",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_11_2",
+          "text": "Answer Short Question",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_12_11",
+      "weekNo": 12,
+      "startDate": "2027-01-26",
+      "endDate": "2027-02-01",
+      "phase": "PTE Skills",
+      "title": "PTE Speaking: DI, RL, SGD & RS",
+      "topics": [
+        {
+          "_id": "topic_12_0",
+          "text": "Describe Image",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_12_1",
+          "text": "Retell Lecture",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_12_2",
+          "text": "Summarize Group Discussion",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_12_3",
+          "text": "Respond to a Situation",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_13_12",
+      "weekNo": 13,
+      "startDate": "2027-02-02",
+      "endDate": "2027-02-08",
+      "phase": "PTE Skills",
+      "title": "PTE Writing: SWT, Essay & Email",
+      "topics": [
+        {
+          "_id": "topic_13_0",
+          "text": "Summarize Written Text",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_13_1",
+          "text": "Essay",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_13_2",
+          "text": "Email",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_14_13",
+      "weekNo": 14,
+      "startDate": "2027-02-09",
+      "endDate": "2027-02-15",
+      "phase": "PTE Skills",
+      "title": "PTE Reading: FIB, MCQ & Re-order",
+      "topics": [
+        {
+          "_id": "topic_14_0",
+          "text": "Reading fill in the blanks",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_14_1",
+          "text": "Reading MCQ",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_14_2",
+          "text": "Re-order paragraphs",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_15_14",
+      "weekNo": 15,
+      "startDate": "2027-02-16",
+      "endDate": "2027-02-22",
+      "phase": "PTE Skills",
+      "title": "PTE Listening: SST, FIB, WFD & MCQ",
+      "topics": [
+        {
+          "_id": "topic_15_0",
+          "text": "Summarize Spoken Text",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_15_1",
+          "text": "Listening fill in the blanks",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_15_2",
+          "text": "Write from Dictation",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_15_3",
+          "text": "Listening MCQ",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_16_15",
+      "weekNo": 16,
+      "startDate": "2027-02-23",
+      "endDate": "2027-03-01",
+      "phase": "PTE Skills",
+      "title": "PTE Mock 2 & Error Diagnostics",
+      "topics": [
+        {
+          "_id": "topic_16_0",
+          "text": "Mock 2 (Feb 28)",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_16_1",
+          "text": "Mistake analysis",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_17_16",
+      "weekNo": 17,
+      "startDate": "2027-03-02",
+      "endDate": "2027-03-08",
+      "phase": "Mock Phase",
+      "title": "Mock 3 & Weak-Area Drills",
+      "topics": [
+        {
+          "_id": "topic_17_0",
+          "text": "Mock 3",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_17_1",
+          "text": "Weak-area drills",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_18_17",
+      "weekNo": 18,
+      "startDate": "2027-03-09",
+      "endDate": "2027-03-15",
+      "phase": "Mock Phase",
+      "title": "Mock 4 & Time Management",
+      "topics": [
+        {
+          "_id": "topic_18_0",
+          "text": "Mock 4",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_18_1",
+          "text": "Timing practice",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_19_18",
+      "weekNo": 19,
+      "startDate": "2027-03-16",
+      "endDate": "2027-03-22",
+      "phase": "Mock Phase",
+      "title": "Mock 5 & Slot Simulation",
+      "topics": [
+        {
+          "_id": "topic_19_0",
+          "text": "Mock 5",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_19_1",
+          "text": "Exam-day simulation at booked slot time",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_20_19",
+      "weekNo": 20,
+      "startDate": "2027-03-23",
+      "endDate": "2027-03-29",
+      "phase": "Mock Phase",
+      "title": "Mock 6, Revision & Center Logistics",
+      "topics": [
+        {
+          "_id": "topic_20_0",
+          "text": "Mock 6 (light)",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_20_1",
+          "text": "Revision",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_20_2",
+          "text": "Rest",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_20_3",
+          "text": "Confirm ID and centre route",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_Exam_20",
+      "weekNo": "Exam",
+      "startDate": "2027-03-30",
+      "endDate": "2027-04-05",
+      "phase": "Exam",
+      "title": "PTE Academic Exam Window",
+      "topics": [
+        {
+          "_id": "topic_Exam_0",
+          "text": "PTE Academic exam",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    },
+    {
+      "_id": "week_Buffer_21",
+      "weekNo": "Buffer",
+      "startDate": "2027-04-06",
+      "endDate": "2027-04-12",
+      "phase": "Buffer",
+      "title": "Result Review & Retake Buffer",
+      "topics": [
+        {
+          "_id": "topic_Buffer_0",
+          "text": "Result review",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_Buffer_1",
+          "text": "Weak-skill drill",
+          "done": false,
+          "doneAt": null
+        },
+        {
+          "_id": "topic_Buffer_2",
+          "text": "Retake booking if needed",
+          "done": false,
+          "doneAt": null
+        }
+      ],
+      "status": "upcoming",
+      "shiftedByDays": 0
+    }
+  ],
+  "logs": [],
+  "notes": [],
+  "mockScores": [],
+  "activities": [
+    {
+      "_id": "act_1794290604738",
+      "date": "2026-11-10",
+      "timestamp": "2026-11-10T06:03:24.804Z",
+      "kind": "log_saved",
+      "summary": "Initialized PTE Tracker database and roadmap."
+    }
+  ]
+}

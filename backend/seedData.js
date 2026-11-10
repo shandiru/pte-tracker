@@ -1,0 +1,297 @@
+export const defaultSettings = {
+  examDate: '2027-03-30',
+  bufferEndDate: '2027-04-12',
+  minScore: 58,
+  targetScore: 70,
+  minSkillScore: 50,
+  dailyGoalMinutes: 105,
+};
+
+export const defaultCheckpointTargets = [
+  { date: '2026-12-07', label: 'Checkpoint 1 (Dec 7)', target: 'baseline + 5', numericTarget: 50 },
+  { date: '2027-01-17', label: 'Mock 1 (Jan 17)', target: '50–55', numericTarget: 53 },
+  { date: '2027-02-28', label: 'Mock 2 (Feb 28)', target: '60–65', numericTarget: 62 },
+  { date: '2027-03-29', label: 'Mock 6 (Mar 29)', target: '68–72', numericTarget: 70 },
+];
+
+export const rawRoadmapSeed = [
+  {
+    weekNo: 1,
+    startDate: '2026-11-10',
+    endDate: '2026-11-16',
+    phase: 'Foundation',
+    title: 'Diagnostic Mock & Core English Foundations',
+    topics: [
+      'Diagnostic mock',
+      'Parts of speech (8 types)',
+      'Articles',
+      'Singular/plural rules',
+    ],
+  },
+  {
+    weekNo: 2,
+    startDate: '2026-11-17',
+    endDate: '2026-11-23',
+    phase: 'Foundation',
+    title: 'Verb Forms & Irregular Verbs',
+    topics: [
+      'Verb forms V1–V5',
+      '10 irregular verbs daily (100 total)',
+      'Helping verbs (be/have/do)',
+    ],
+  },
+  {
+    weekNo: 3,
+    startDate: '2026-11-24',
+    endDate: '2026-11-30',
+    phase: 'Foundation',
+    title: 'Sentence Structure & Agreement',
+    topics: [
+      'SVO pattern',
+      'Question formation',
+      'Negatives',
+      'Subject-verb agreement',
+    ],
+  },
+  {
+    weekNo: 4,
+    startDate: '2026-12-01',
+    endDate: '2026-12-07',
+    phase: 'Foundation',
+    title: 'Simple Tenses & Checkpoint 1',
+    topics: [
+      'Simple present',
+      'Simple past',
+      'Simple future',
+      'Checkpoint 1 (Dec 7)',
+    ],
+  },
+  {
+    weekNo: 5,
+    startDate: '2026-12-08',
+    endDate: '2026-12-14',
+    phase: 'Grammar Core',
+    title: 'Present Tense Mastery',
+    topics: [
+      'Present simple/continuous/perfect/perfect continuous',
+    ],
+  },
+  {
+    weekNo: 6,
+    startDate: '2026-12-15',
+    endDate: '2026-12-21',
+    phase: 'Grammar Core',
+    title: 'Past Tense Mastery',
+    topics: [
+      'Past simple/continuous/perfect/perfect continuous',
+    ],
+  },
+  {
+    weekNo: 7,
+    startDate: '2026-12-22',
+    endDate: '2026-12-28',
+    phase: 'Grammar Core',
+    title: 'Future Tense Mastery',
+    topics: [
+      'Future simple/continuous/perfect/perfect continuous',
+    ],
+  },
+  {
+    weekNo: 8,
+    startDate: '2026-12-29',
+    endDate: '2027-01-04',
+    phase: 'Grammar Core',
+    title: 'Modals, Active & Passive Voice',
+    topics: [
+      'Modal verbs',
+      'Active voice',
+      'Passive voice',
+      'Convert 12 tenses active→passive',
+    ],
+  },
+  {
+    weekNo: 9,
+    startDate: '2027-01-05',
+    endDate: '2027-01-11',
+    phase: 'Grammar Core',
+    title: 'Conditionals, Speech & Prepositions',
+    topics: [
+      'Conditionals type 1/2/3',
+      'Direct and indirect speech',
+      'Prepositions',
+      'Phrasal verbs',
+      'Book exam slot by Jan 15',
+    ],
+  },
+  {
+    weekNo: 10,
+    startDate: '2027-01-12',
+    endDate: '2027-01-18',
+    phase: 'Grammar Core',
+    title: 'Grammar Revision & Mock 1',
+    topics: [
+      'Full grammar revision',
+      'Mock 1 (Jan 17)',
+    ],
+  },
+  {
+    weekNo: 11,
+    startDate: '2027-01-19',
+    endDate: '2027-01-25',
+    phase: 'PTE Skills',
+    title: 'PTE Speaking: RA, RS & ASQ',
+    topics: [
+      'Read Aloud',
+      'Repeat Sentence',
+      'Answer Short Question',
+    ],
+  },
+  {
+    weekNo: 12,
+    startDate: '2027-01-26',
+    endDate: '2027-02-01',
+    phase: 'PTE Skills',
+    title: 'PTE Speaking: DI, RL, SGD & RS',
+    topics: [
+      'Describe Image',
+      'Retell Lecture',
+      'Summarize Group Discussion',
+      'Respond to a Situation',
+    ],
+  },
+  {
+    weekNo: 13,
+    startDate: '2027-02-02',
+    endDate: '2027-02-08',
+    phase: 'PTE Skills',
+    title: 'PTE Writing: SWT, Essay & Email',
+    topics: [
+      'Summarize Written Text',
+      'Essay',
+      'Email',
+    ],
+  },
+  {
+    weekNo: 14,
+    startDate: '2027-02-09',
+    endDate: '2027-02-15',
+    phase: 'PTE Skills',
+    title: 'PTE Reading: FIB, MCQ & Re-order',
+    topics: [
+      'Reading fill in the blanks',
+      'Reading MCQ',
+      'Re-order paragraphs',
+    ],
+  },
+  {
+    weekNo: 15,
+    startDate: '2027-02-16',
+    endDate: '2027-02-22',
+    phase: 'PTE Skills',
+    title: 'PTE Listening: SST, FIB, WFD & MCQ',
+    topics: [
+      'Summarize Spoken Text',
+      'Listening fill in the blanks',
+      'Write from Dictation',
+      'Listening MCQ',
+    ],
+  },
+  {
+    weekNo: 16,
+    startDate: '2027-02-23',
+    endDate: '2027-03-01',
+    phase: 'PTE Skills',
+    title: 'PTE Mock 2 & Error Diagnostics',
+    topics: [
+      'Mock 2 (Feb 28)',
+      'Mistake analysis',
+    ],
+  },
+  {
+    weekNo: 17,
+    startDate: '2027-03-02',
+    endDate: '2027-03-08',
+    phase: 'Mock Phase',
+    title: 'Mock 3 & Weak-Area Drills',
+    topics: [
+      'Mock 3',
+      'Weak-area drills',
+    ],
+  },
+  {
+    weekNo: 18,
+    startDate: '2027-03-09',
+    endDate: '2027-03-15',
+    phase: 'Mock Phase',
+    title: 'Mock 4 & Time Management',
+    topics: [
+      'Mock 4',
+      'Timing practice',
+    ],
+  },
+  {
+    weekNo: 19,
+    startDate: '2027-03-16',
+    endDate: '2027-03-22',
+    phase: 'Mock Phase',
+    title: 'Mock 5 & Slot Simulation',
+    topics: [
+      'Mock 5',
+      'Exam-day simulation at booked slot time',
+    ],
+  },
+  {
+    weekNo: 20,
+    startDate: '2027-03-23',
+    endDate: '2027-03-29',
+    phase: 'Mock Phase',
+    title: 'Mock 6, Revision & Center Logistics',
+    topics: [
+      'Mock 6 (light)',
+      'Revision',
+      'Rest',
+      'Confirm ID and centre route',
+    ],
+  },
+  {
+    weekNo: 'Exam',
+    startDate: '2027-03-30',
+    endDate: '2027-04-05',
+    phase: 'Exam',
+    title: 'PTE Academic Exam Window',
+    topics: [
+      'PTE Academic exam',
+    ],
+  },
+  {
+    weekNo: 'Buffer',
+    startDate: '2027-04-06',
+    endDate: '2027-04-12',
+    phase: 'Buffer',
+    title: 'Result Review & Retake Buffer',
+    topics: [
+      'Result review',
+      'Weak-skill drill',
+      'Retake booking if needed',
+    ],
+  },
+];
+
+export function buildInitialRoadmapWeeks() {
+  return rawRoadmapSeed.map((w, idx) => ({
+    _id: `week_${w.weekNo}_${idx}`,
+    weekNo: w.weekNo,
+    startDate: w.startDate,
+    endDate: w.endDate,
+    phase: w.phase,
+    title: w.title,
+    topics: w.topics.map((t, tIdx) => ({
+      _id: `topic_${w.weekNo}_${tIdx}`,
+      text: t,
+      done: false,
+      doneAt: null,
+    })),
+    status: 'upcoming',
+    shiftedByDays: 0,
+  }));
+}
