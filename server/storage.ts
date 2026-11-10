@@ -290,6 +290,32 @@ export async function addTopic(weekId: string, text: string): Promise<IRoadmapWe
 
 export async function deleteTopic(weekId: string, topicId: string): Promise<IRoadmapWeek> {
   const today = getTodayColombo();
+
+  if (isMongoActive()) {
+    const week = await RoadmapWeekModel.findById(weekId).lean();
+    if (!week) throw new Error(`Week with ID ${weekId} not found`);
+    const topics = (week.topics || []).filter((topic) => topic._id !== topicId);
+    if (topics.length === week.topics.length) {
+      throw new Error(`Topic with ID ${topicId} not found`);
+    }
+
+    const updated = await RoadmapWeekModel.findByIdAndUpdate(
+      weekId,
+      { $set: { topics } },
+      { new: true }
+    ).lean();
+    if (!updated) throw new Error(`Week with ID ${weekId} not found`);
+
+    // Keep the local cache in sync when available, without making it the source of truth.
+    const state = readJSON();
+    const cachedIndex = state.roadmapWeeks.findIndex((item) => item._id === weekId);
+    if (cachedIndex !== -1) {
+      state.roadmapWeeks[cachedIndex] = updated as unknown as IRoadmapWeek;
+      writeJSON(state);
+    }
+    return normalizeWeekWithStatus(updated as unknown as IRoadmapWeek, today);
+  }
+
   const state = readJSON();
   const weekIndex = state.roadmapWeeks.findIndex((w) => w._id === weekId);
   if (weekIndex === -1) {
@@ -381,6 +407,8 @@ export async function getDailyLogs(from?: string, to?: string): Promise<IDailyLo
     }
   }
 
+  if (isMongoActive()) return logs;
+
   if (logs.length === 0) {
     const state = readJSON();
     logs = state.logs;
@@ -466,6 +494,15 @@ export async function upsertDailyLog(date: string, logData: Partial<IDailyLog>):
 }
 
 export async function deleteDailyLog(date: string): Promise<boolean> {
+  if (isMongoActive()) {
+    const result = await DailyLogModel.deleteOne({ date });
+    const state = readJSON();
+    const initialCount = state.logs.length;
+    state.logs = state.logs.filter((log) => log.date !== date);
+    if (state.logs.length !== initialCount) writeJSON(state);
+    return result.deletedCount > 0;
+  }
+
   const state = readJSON();
   const initLen = state.logs.length;
   state.logs = state.logs.filter((l) => l.date !== date);
@@ -490,8 +527,13 @@ export async function getNotes(filters?: {
   pinned?: boolean;
   search?: string;
 }): Promise<INote[]> {
-  const state = readJSON();
-  let notes = [...state.notes];
+  let notes: INote[];
+  if (isMongoActive()) {
+    const docs = await NoteModel.find().lean();
+    notes = docs as unknown as INote[];
+  } else {
+    notes = [...readJSON().notes];
+  }
 
   if (filters?.skill && filters.skill !== 'all') {
     notes = notes.filter((n) => n.skill === filters.skill);
@@ -596,6 +638,15 @@ export async function updateNote(
 }
 
 export async function deleteNote(id: string): Promise<boolean> {
+  if (isMongoActive()) {
+    const result = await NoteModel.findByIdAndDelete(id);
+    const state = readJSON();
+    const initialCount = state.notes.length;
+    state.notes = state.notes.filter((note) => note._id !== id);
+    if (state.notes.length !== initialCount) writeJSON(state);
+    return result !== null;
+  }
+
   const state = readJSON();
   const initLen = state.notes.length;
   state.notes = state.notes.filter((n) => n._id !== id);
@@ -615,8 +666,9 @@ export async function deleteNote(id: string): Promise<boolean> {
 
 // Mock Scores
 export async function getMockScores(): Promise<IMockScore[]> {
-  const state = readJSON();
-  const scores = [...state.mockScores];
+  const scores = isMongoActive()
+    ? (await MockScoreModel.find().lean()) as unknown as IMockScore[]
+    : [...readJSON().mockScores];
   scores.sort((a, b) => a.date.localeCompare(b.date));
   return scores;
 }
@@ -691,6 +743,15 @@ export async function updateMockScore(
 }
 
 export async function deleteMockScore(id: string): Promise<boolean> {
+  if (isMongoActive()) {
+    const result = await MockScoreModel.findByIdAndDelete(id);
+    const state = readJSON();
+    const initialCount = state.mockScores.length;
+    state.mockScores = state.mockScores.filter((score) => score._id !== id);
+    if (state.mockScores.length !== initialCount) writeJSON(state);
+    return result !== null;
+  }
+
   const state = readJSON();
   const initLen = state.mockScores.length;
   state.mockScores = state.mockScores.filter((m) => m._id !== id);
